@@ -1,16 +1,21 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Google Fonts'tan Inter fontunu ekledim */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+:root {
+  --background: #f0f7ff; /* Çok açık mavi arka plan */
+  --foreground: #171717;
+  --font-sans: 'Inter', Arial, Helvetica, sans-serif;
   --font-mono: var(--font-geist-mono);
 }
+
+/* @theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -27,5 +32,5 @@ html, body, #root, #__next {
   overflow-x: hidden;  /* Yatay kaydırmayı önle */
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }

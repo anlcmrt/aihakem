@@ -56,7 +56,7 @@ export default function Home() {
       {/* Sağ içerik */}
       <section className="flex-grow p-12 overflow-auto bg-white rounded-md shadow-sm max-w-full">
         {!selectedEntry ? (
-          <div className="text-gray-700 text-lg max-w-4xl mx-auto">
+          <div className="text-gray-700 text-lg max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold mb-8">Hoşgeldin!</h2>
             <p className="text-base leading-relaxed">
               Soldaki başlıklardan birini seçerek maç pozisyonlarını izleyebilir ve hakem kararlarını değerlendirebilirsin.
